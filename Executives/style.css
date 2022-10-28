@@ -1,8 +1,14 @@
+*{
+    margin:0;
+    padding: 0;;
+}
 body{
     background-image: url("./rent.jpg");
     font-weight: bold;
 }
-
+#wrapper{
+    width: 650px;
+}
 .nav-img{
     width: 80px;
     border-radius: 25%;

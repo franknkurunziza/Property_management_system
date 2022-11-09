@@ -40,3 +40,13 @@ function openReports()
 {
     window.open("PM_Reports.html", "_self")
 }
+
+function openSearchProperties()
+{
+    window.open("PropertySearch.html")
+}
+
+function openLogout()
+{
+    window.open("login.html", "_self")
+}

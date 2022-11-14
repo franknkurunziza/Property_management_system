@@ -1,0 +1,67 @@
+
+h2{
+    margin-top: 10px;
+    text-align: center;
+}
+.wrapper{
+    display :flex;
+    align-content: space-around;
+    justify-content: center;
+    margin-top: 20px;
+}
+.processes{
+    color: blue;
+    width: 420px;
+    border: 2px solid black;
+    padding: 40px;
+    margin-right: 20px;
+    border-radius: 25px;
+    height: 600px;
+
+}
+.actions{
+    color: red;
+    width:60%;
+    border: 2px solid black;
+    padding: 40px;
+    margin-right: 20px;
+    border-radius: 25px;
+}
+.nav-img{
+    width: 80px;
+    border-radius: 25%;
+}
+.process1{
+    border: 2px solid black;;
+    margin-top: 40px;
+    width: 100%;
+    height: 100px;
+    border-radius: 5%;
+    text-align: center;
+}
+.process2{
+    border: 2px solid black;
+    margin-top: 40px;
+    width: 100%;
+    height: 100px;
+    border-radius: 5%;
+    text-align: center;
+}
+.process3{
+    border: 2px solid black;
+    border-radius: 5%;
+    margin-top: 40px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+h1{
+    margin-top: 25px;
+}
+.action1{
+    border: 2px solid black;
+    border-radius: 5%;
+    margin-top: 20px;
+    height: 200px;
+    text-align: center;
+}

@@ -1,0 +1,66 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.header
+{
+    height: 100vh;
+    background-image: url("../image/PropertySearch.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+.nav-img{
+    width: 80px;
+    border-radius: 25%;
+}
+
+h1
+{
+    color: #fff;
+    margin-bottom: 70px;
+    font-size: 45px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.search-field
+{
+    height: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+}
+
+.property
+{
+    width: 475px;
+}
+
+.location
+{
+    width: 275px;
+}
+
+.search-btn
+{
+    height: 50px;
+    width: 150px;
+    background: #ffeb3b;
+    border: none;
+    color: #000;
+    border-radius: 25px;
+}
+
+.search-btn:hover
+{
+    background: #ffc107;
+    cursor: pointer;
+}
+

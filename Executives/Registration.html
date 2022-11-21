@@ -21,32 +21,10 @@
 </head>
 
 <body style="background-color:white">
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a href="http://"><img class="nav-img" src="./logo.png" alt="desert"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav> -->
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a href="login.html"><img class="nav-img" src="./logo.png" alt="desert"></a>
+            <a href="#"><img class="nav-img" src="./logo.png" alt="desert"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -54,13 +32,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                        <a class="nav-link" aria-current="page" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"></a>
+                        <a class="nav-link" href="PropertySearch.html">Search Properties</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
                     </li>
                 </ul>
             </div>
@@ -74,30 +55,30 @@
 
     </div>
 
-    
+
 
 
     <div id="Wrapper">
-        <form>
+        <form action="applicationThankYou.html">
             <div style="margin-top: 100px;">
                 <hr>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="fName">First Name<span id="Required"> *</span></label>
-                    <input type="text" class="form-control" id="fName">
+                    <input type="text" class="form-control" id="fName" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="lName">Last Name<span id="Required"> *</span></label>
-                    <input type="text" class="form-control" id="lName">
+                    <input type="text" class="form-control" id="lName" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="email">Email Address<span id="Required"> *</span></label>
-                    <input type="email" class="form-control" id="email">
+                    <input type="email" class="form-control" id="email" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="password">Password<span id="Required"> *</span></label>
-                    <input type="password" class="form-control" id="password">
+                    <input type="password" class="form-control" id="password" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="SSN">Social Security Number</label>
@@ -212,19 +193,22 @@
                 <hr>
             </div>
 
-            
-                
-                    <p>Have you ever been convicted, plead guilty, please no contest, received probation, deferred adjudication, court- ordered community supervision or pre-trial diversion for a felony or misdemeanor?</p>
-                    <label for="Yes">Yes</label>
-                    <input type="radio" id="Yes"> 
-                    <label for="No" style="margin-left: 20px;">No</label>
-                    <input type="radio" id="No"> 
-                
-                    <p>Have you ever been convicted, plead guilty, please no contest, received probation, deferred adjudication, court ordered community supervision or pre-trial diversion for a felony or misdemeanor involving violence or sexual misconduct?</p>
-                    <label for="Yes">Yes</label>
-                    <input type="radio" id="Yes"> 
-                    <label for="No" style="margin-left: 20px;">No</label>
-                    <input type="radio" id="No"> 
+
+
+            <p>Have you ever been convicted, plead guilty, please no contest, received probation, deferred adjudication,
+                court- ordered community supervision or pre-trial diversion for a felony or misdemeanor?</p>
+            <label for="Yes">Yes</label>
+            <input type="radio" id="Yes">
+            <label for="No" style="margin-left: 20px;">No</label>
+            <input type="radio" id="No">
+
+            <p>Have you ever been convicted, plead guilty, please no contest, received probation, deferred adjudication,
+                court ordered community supervision or pre-trial diversion for a felony or misdemeanor involving
+                violence or sexual misconduct?</p>
+            <label for="Yes">Yes</label>
+            <input type="radio" id="Yes">
+            <label for="No" style="margin-left: 20px;">No</label>
+            <input type="radio" id="No">
 
 
             <div style="margin-top: 50px;">
@@ -233,25 +217,38 @@
             </div>
 
             <div>
-            By signing below I certify that all of the information written above is true and complete. Incomplete and/or false information may cause this application to be rejected, or have occupancy terminated and no fees or deposits will be returned.
+                By signing below I certify that all of the information written above is true and complete. Incomplete
+                and/or false information may cause this application to be rejected, or have occupancy terminated and no
+                fees or deposits will be returned.
 
-            I authorize the landlord to obtain and verify my income, criminal and credit history and to obtain credit reports and any other information it finds necessary for purposes of evaluating my application. I further authorize landlord, its agents and/or attorneys to obtain credit reports and information at any time during and after my tenancy, in the event of a breach of any lease or term of tenancy.
-            1111
-            I will pay the Landlord a nonrefundable Application Fee for processing the application. I understand that the Application Fee will not be refunded for any reason.
-            
-            I will pay the Landlord an Administration Fee for processing the Lease with this application. Paying this fee does not guarantee a lease approval or the right to a bedroom. If a bedroom cannot be leased, or the application is not approved, the Administration Fee will be refunded. It will also be refunded if the application is withdrawn or cancelled within 72 hours of receiving it. The cancellation or withdrawal must be submitted in writing and received by the office in that 72 hour period.Once the application is approved, the Administration Fee is no longer refundable, even if I fail to move in.
-            
-            If my income and/or credit information do not meet the property qualifying criteria, I will get a Guarantor who can provide the necessary income, and be willing to sign the Guaranty of Resident Obligations.
+                I authorize the landlord to obtain and verify my income, criminal and credit history and to obtain
+                credit reports and any other information it finds necessary for purposes of evaluating my application. I
+                further authorize landlord, its agents and/or attorneys to obtain credit reports and information at any
+                time during and after my tenancy, in the event of a breach of any lease or term of tenancy.
+                1111
+                I will pay the Landlord a nonrefundable Application Fee for processing the application. I understand
+                that the Application Fee will not be refunded for any reason.
+
+                I will pay the Landlord an Administration Fee for processing the Lease with this application. Paying
+                this fee does not guarantee a lease approval or the right to a bedroom. If a bedroom cannot be leased,
+                or the application is not approved, the Administration Fee will be refunded. It will also be refunded if
+                the application is withdrawn or cancelled within 72 hours of receiving it. The cancellation or
+                withdrawal must be submitted in writing and received by the office in that 72 hour period.Once the
+                application is approved, the Administration Fee is no longer refundable, even if I fail to move in.
+
+                If my income and/or credit information do not meet the property qualifying criteria, I will get a
+                Guarantor who can provide the necessary income, and be willing to sign the Guaranty of Resident
+                Obligations.
             </div>
             <div class="form-group col-md-6" style="margin-top: 50px;">
                 <label for="sigDate">Date</label>
                 <input type="date" class="form-control" id="sigDate">
             </div>
-        
-            <button type="submit" class="btn btn-primary">Apply</button>
+
+            <input type="submit" value="Submit">
         </form>
 
-       
+
     </div>
 
 </body>

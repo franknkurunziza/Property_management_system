@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding: 0;;
+}
+body{
+    background-image: url("./rent.jpg");
+    font-weight: bold;
+}
+#wrapper{
+    width: 650px;
+}
+.nav-img{
+    width: 80px;
+    border-radius: 25%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    margin-top: 10%;
+    width: 30%;
+    background-color: #fff;
+    opacity: 0.75;
+    /* padding: 10%; */
+    
+}
+.container img{
+    opacity: 1 !important;
+}
+.btn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.btn:after {
+    color: black;
+}
+.input-text{
+    border: 2px solid black;
+}
+.navbar{
+    /* opacity: 0.5; */
+}
+.footer{
+    position: bottom left;
+}
+
+
+.log-title:hover{
+    color:sandybrown;
+}
+input{
+    font-weight: bold !important;
+}

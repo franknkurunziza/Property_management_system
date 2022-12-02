@@ -1,13 +1,13 @@
-package com.group.Executive;
+package com.example.Executive;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ExecutiveApplication {
+public class Executive {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ExecutiveApplication.class, args);
+		SpringApplication.run(Executive.class, args);
 	}
 
 }

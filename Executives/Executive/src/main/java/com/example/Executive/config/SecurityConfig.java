@@ -25,7 +25,7 @@ public class SecurityConfig   {
                 .authorizeRequests(auth ->
 
                                 auth
-
+                                        .antMatchers("/css/**", "/js/**", "/images/**").permitAll()
                                         .antMatchers("/").permitAll()
                                         .antMatchers("/user/**").hasRole("USER")
                                         .antMatchers("/admin/**").hasRole("ADMIN")
@@ -33,8 +33,10 @@ public class SecurityConfig   {
                                         .authenticated()
 
 
+
+
                 )
-                .formLogin(withDefaults())
+                .formLogin().loginPage("/login").permitAll().and()
                 .build();
 
     }

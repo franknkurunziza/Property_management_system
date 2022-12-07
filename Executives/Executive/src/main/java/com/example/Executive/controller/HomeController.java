@@ -1,6 +1,8 @@
 package com.example.Executive.controller;
 
 import com.example.Executive.model.Tenant;
+import com.example.Executive.model.User;
+import com.example.Executive.service.CustomUserDetailsService;
 import com.example.Executive.service.TenantService;
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +17,9 @@ public class HomeController {
 
     @Autowired
     private TenantService tenantService;
+
+    @Autowired
+    private CustomUserDetailsService userDetailsService;
 
     @GetMapping(value = "/")
     public String dashboard(){return "/SearchProperty";}
@@ -43,6 +48,11 @@ public class HomeController {
     @GetMapping("/user")
     public String user(){
         return "/userdash";
+    }
+
+    @PostMapping("/createUser")
+    public User createUser(@RequestBody User user){
+        return userDetailsService.createUserAcc(user);
     }
 
     @GetMapping("apply")

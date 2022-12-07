@@ -1,10 +1,16 @@
 package com.example.Executive.model;
 
+import lombok.*;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.util.Date;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
 @Entity
 @Table(name = "user")
 public class User {
@@ -16,6 +22,14 @@ public class User {
     private String password;
     private boolean isActive;
     private String roles;
+
+    @OneToOne(fetch=FetchType.LAZY)
+    @JoinColumn(name="employee_id")
+    private Employee employee;
+
+    @OneToOne(fetch=FetchType.LAZY)
+    @JoinColumn(name="tenant_id")
+    private Tenant tenant;
 
     @Column(updatable = false)
     @DateTimeFormat(pattern="dd-mm-yyyy")
@@ -36,56 +50,5 @@ public class User {
 
 //  Getters and Setters...
 
-    public Long getId() {
-        return id;
-    }
 
-
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public boolean isActive() {
-        return isActive;
-    }
-
-    public void setActive(boolean active) {
-        isActive = active;
-    }
-
-    public String getRoles() {
-        return roles;
-    }
-
-    public void setRoles(String roles) {
-        this.roles = roles;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", userName='" + userName + '\'' +
-                ", password='" + password + '\'' +
-                ", isActive=" + isActive +
-                ", roles='" + roles + '\'' +
-                '}';
-    }
 }

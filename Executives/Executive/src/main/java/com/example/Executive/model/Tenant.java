@@ -1,8 +1,19 @@
 package com.example.Executive.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import javax.persistence.*;
+import java.util.Date;
 //import java.time.LocalDateTime;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "Tenants")
 public class Tenant {
@@ -18,59 +29,27 @@ public class Tenant {
     private String SSN;
     private String Email;
 
-    public Long getId() {
-        return id;
-    }
+    @Column(updatable = false)
+    @DateTimeFormat(pattern="dd-mm-yyyy")
+    private Date createdAt;
+    @DateTimeFormat(pattern="dd-mm-yyyy")
+    private Date updatedAt;
 
-    public void setId(Long id) {
-        this.id = id;
+    //AUTOGEN CREATE/UPDATE TIMESTAMPS
+    @PrePersist
+    protected void onCreate(){
+        this.createdAt = new Date();
     }
+    @PreUpdate
+    protected void onUpdate(){
+        this.updatedAt = new Date();
+    }
+    //Relationship to user
 
-    public String getFirstName() {
-        return firstName;
-    }
+    @OneToOne(mappedBy = "tenant", cascade = CascadeType.ALL)
+    private User tenantUseracc;
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
 
-    public String getMiddleName() {
-        return middleName;
-    }
 
-    public void setMiddleName(String middleName) {
-        this.middleName = middleName;
-    }
 
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public String getDob() {
-        return dob;
-    }
-
-    public void setDob(String dob) {
-        this.dob = dob;
-    }
-
-    public String getSSN() {
-        return SSN;
-    }
-
-    public void setSSN(String SSN) {
-        this.SSN = SSN;
-    }
-
-    public String getEmail() {
-        return Email;
-    }
-
-    public void setEmail(String email) {
-        Email = email;
-    }
 }

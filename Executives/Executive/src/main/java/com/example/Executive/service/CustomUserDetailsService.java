@@ -28,4 +28,8 @@ public class CustomUserDetailsService implements UserDetailsService {
 
         return new CustomUserDetails(user);
     }
+
+    public User createUserAcc(User user){
+        return userRepository.save(user);
+    }
 }

@@ -61,5 +61,10 @@ public class AdminController {
         return "/PM_ManageProperties";
     }
 
+    @GetMapping("/AddProperty")
+    public String addProperty(){
+        return "/AddProperty";
+    }
+
 
 }

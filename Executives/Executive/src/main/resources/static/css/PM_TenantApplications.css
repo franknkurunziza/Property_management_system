@@ -148,3 +148,25 @@ body
 {
     font-size: 20px;
 }
+.buttons {
+    background-color: beige;
+    border-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -25px 18px -14px inset,rgba(0, 0, 0, 0.15) 0 1px 2px,rgba(0, 0, 0, 0.15) 0 2px 4px,rgba(0, 0, 0, 0.15) 0 4px 8px,rgba(0, 0, 0, 0.15) 0 8px 16px,rgba(0, 0, 0, 0.15) 0 16px 32px;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.buttons:hover {
+    transform: scale(1.05);
+}

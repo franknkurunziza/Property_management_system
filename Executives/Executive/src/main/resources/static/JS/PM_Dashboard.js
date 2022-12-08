@@ -43,10 +43,10 @@ function openReports()
 
 function openSearchProperties()
 {
-    window.open("/PropertySearch")
+    window.open("/")
 }
 
 function openLogout()
 {
-    window.open("login", "_self")
+    window.open("/logout", "_self")
 }

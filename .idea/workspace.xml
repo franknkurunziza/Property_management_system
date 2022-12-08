@@ -6,7 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="d19233f0-96d9-44f5-b860-abb8da79f2b4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Executives.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Executives/Inbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/Executives/Inbox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Executives/OwnerDashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/Executives/OwnerDashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Executives/PM_Dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/Executives/PM_Dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Executives/PM_ManageProperties.html" beforeDir="false" afterPath="$PROJECT_DIR$/Executives/PM_ManageProperties.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Executives/PM_Reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/Executives/PM_Reports.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Executives/PM_TenantApplications.html" beforeDir="false" afterPath="$PROJECT_DIR$/Executives/PM_TenantApplications.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Executives/Profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/Executives/Profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Executives/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/Executives/dashboard.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,13 +31,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/nasht/Desktop/Property_management_system&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/nasht/Desktop/Property_management_system",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

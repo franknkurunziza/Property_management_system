@@ -23,7 +23,7 @@
 
     <!--Material Icons-->>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-    <title>New Property</title>
+    <title>Create User</title>
 </head>
 
 <body>
@@ -92,30 +92,36 @@
 
         <div id="Wrapper">
             <form action="applicationThankYou.html">
-                <h2>New Property</h2>
+                <h2>Create Tenant</h2>
                 <div style="margin-top: 30px;">
                     <hr>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label for="Address">Property Address<span id="Required"> *</span></label>
-                        <input style="width: 725px;" type="text" class="form-control" id="Address" required>
+                        <label for="fName">First Name<span id="Required"> *</span></label>
+                        <input style="width: 725px;" type="text" class="form-control" id="fName" required>
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="RentCost">Cost of Rent<span id="Required"> *</span></label>
-                        <input style="width: 725px;" type="number" class="form-control" id="RentCost" required>
+                        <label for="mName">Middle Name<span id="Required"> *</span></label>
+                        <input style="width: 725px;" type="text" class="form-control" id="mName" required>
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="RentedBy">Rented By<span id="Required"> *</span></label>
-                        <input style="width: 725px;" type="number" class="form-control" id="RentedBy" required>
+                        <label for="lName">Last Name<span id="Required"> *</span></label>
+                        <input style="width: 725px;" type="text" class="form-control" id="lName" required>
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="Occupied">Availability<span id="Required"> *</span></label>
-                        <select name="Occupied" id="Occupied" style="width: 125px; ">
-                            <option value="Available">Available</option>
-                            <option value="NotAvailable">Not Available</option>
-                        </select>
+                        <label for="email">Email<span id="Required"> *</span></label>
+                        <input style="width: 725px;" type="email" class="form-control" id="email" required>
                     </div>
+                    <div class="form-group col-md-6">
+                        <label for="DoB">Date of Birth<span id="Required"> *</span></label>
+                        <input style="width: 725px;" type="date" class="form-control" id="DoB" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="SSN">Social Security<span id="Required"> *</span></label>
+                        <input style="width: 725px;" type="number" class="form-control" id="SSN" required>
+                    </div>
+
                     <input type="submit" value="Submit">
                 </div>
             </form>

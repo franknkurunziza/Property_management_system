@@ -29,6 +29,8 @@ public class HomeController {
         return "/login";
     }
 
+    //@GetMapping("/user/about")
+
     @PostMapping(value="/create", produces = MediaType.APPLICATION_JSON_VALUE)
     public String createTenants(@RequestBody Tenant tenant){
         tenantService.createTenant(tenant);

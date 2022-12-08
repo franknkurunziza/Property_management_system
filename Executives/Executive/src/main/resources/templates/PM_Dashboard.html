@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="https://www.thymeleaf.org">
 
 <head>
     <meta charset="utf-8">
@@ -87,7 +87,7 @@
                         <p class="text-primary">PROPERTIES</p>
                         <span class="material-icons-outlined text-blue">apartment</span>
                     </div>
-                    <span class="text-primary font-weight-bold">2</span>
+                    <span class="text-primary font-weight-bold" th:text="${properties.size()}"></span>
                 </div>
 
                 <div class="card">
@@ -95,7 +95,7 @@
                         <p class="text-primary">OWNERS</p>
                         <span class="material-icons-outlined text-orange">person</span>
                     </div>
-                    <span class="text-primary font-weight-bold">2</span>
+                    <span class="text-primary font-weight-bold" th:text="${owners.size()}">2</span>
                 </div>
 
                 <div class="card">
@@ -103,7 +103,7 @@
                         <p class="text-primary">TENANTS</p>
                         <span class="material-icons-outlined text-green">people</span>
                     </div>
-                    <span class="text-primary font-weight-bold">3</span>
+                    <span class="text-primary font-weight-bold" th:text="${tenants.size()}"> </span>
                 </div>
 
                 <div class="card">

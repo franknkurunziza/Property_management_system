@@ -19,10 +19,12 @@ public class Property {
     private Long id;
     private String Property_address;
     private double rent_cost;
-    private int owner;
     private int rented_by;
-    private boolean is_Occupied;
+    private boolean is_Occupied=false;
 
+    @ManyToOne
+    @JoinColumn(name="owner_id", nullable=false)
+    private Owner owner;
 
     @Override
     public String toString() {

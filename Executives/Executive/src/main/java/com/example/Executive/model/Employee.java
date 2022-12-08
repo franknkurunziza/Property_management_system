@@ -1,6 +1,9 @@
 package com.example.Executive.model;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
@@ -10,27 +13,20 @@ import java.util.Date;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
 @Entity
-@Table(name = "user")
-public class User {
-
+@Table(name = "Employee")
+public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id", nullable = false)
+
     private Long id;
-    private String userName;
-    private String password;
-    private boolean isActive;
-    private String roles;
-
-    @OneToOne(fetch=FetchType.LAZY)
-    @JoinColumn(name="employee_id")
-    private Employee employee;
-
-    @OneToOne(fetch=FetchType.LAZY)
-    @JoinColumn(name="tenant_id")
-    private Tenant tenant;
-
+    private String firstName;
+    private String middleName;
+    private String lastName;
+    private String dob;
+    private String SSN;
+    private String Email;
 
     @Column(updatable = false)
     @DateTimeFormat(pattern="dd-mm-yyyy")
@@ -48,8 +44,9 @@ public class User {
         this.updatedAt = new Date();
     }
 
-
-//  Getters and Setters...
+    //relationship with the user
+    @OneToOne(mappedBy = "employee", cascade = CascadeType.ALL)
+    private User useracc;
 
 
 }

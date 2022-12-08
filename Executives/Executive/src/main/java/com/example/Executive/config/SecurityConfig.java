@@ -29,6 +29,7 @@ public class SecurityConfig   {
                                         .antMatchers("/css/**", "/js/**", "/images/**").permitAll()
                                         .antMatchers("/" ).permitAll()
                                         .antMatchers(HttpMethod.POST, "/createUser").permitAll()
+                                        .antMatchers(HttpMethod.POST, "/admin/create_Tenants").permitAll()
                                         .antMatchers("/user/**").hasRole("USER")
                                         .antMatchers("/admin/**").hasRole("ADMIN")
                                         .anyRequest()
@@ -38,7 +39,7 @@ public class SecurityConfig   {
 
 
                 )
-                .formLogin().loginPage("/login").permitAll().and()
+                .formLogin(withDefaults())
                 .build();
 
     }

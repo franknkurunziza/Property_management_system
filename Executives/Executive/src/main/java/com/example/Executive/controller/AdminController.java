@@ -66,5 +66,7 @@ public class AdminController {
         return "/AddProperty";
     }
 
+    @GetMapping("/CreatePropertyReport")
+    public String createPropertyReport(){ return "/CreatePropertyReport";}
 
 }

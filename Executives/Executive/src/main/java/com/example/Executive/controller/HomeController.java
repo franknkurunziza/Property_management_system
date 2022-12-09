@@ -62,8 +62,18 @@ public class HomeController {
         return "";
     }
 
-    @GetMapping("/user/payment")
-    public String payment(){
-        return "/userdash";
+    @GetMapping("/user/profile")
+    public String userProfile(){
+        return "/Profile";
+    }
+    
+    @GetMapping("/user/inbox")
+    public String userInbox(){
+        return "/Inbox";
+    }
+
+    @GetMapping("/user/Payments")
+    public String userPayment(){
+        return "/Payment";
     }
 }

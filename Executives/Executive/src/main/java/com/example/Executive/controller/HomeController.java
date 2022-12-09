@@ -66,13 +66,13 @@ public class HomeController {
     public String userProfile(){
         return "/Profile";
     }
-    
+
     @GetMapping("/user/inbox")
     public String userInbox(){
         return "/Inbox";
     }
 
-    @GetMapping("/user/Payments")
+    @GetMapping("/user/payment")
     public String userPayment(){
         return "/Payment";
     }

@@ -106,14 +106,10 @@
                         <input style="width: 725px;" type="number" class="form-control" id="RentCost" required>
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="RentedBy">Rented By<span id="Required"> *</span></label>
-                        <input style="width: 725px;" type="number" class="form-control" id="RentedBy" required>
-                    </div>
-                    <div class="form-group col-md-6">
                         <label for="Occupied">Availability<span id="Required"> *</span></label>
-                        <select name="Occupied" id="Occupied" style="width: 125px; ">
-                            <option value="Available">Available</option>
-                            <option value="NotAvailable">Not Available</option>
+                        <select name="Occupied" id="Occupied" style="width: 125px;">
+                            <option value="False">Available</option>
+                            <option value="True">Not Available</option>
                         </select>
                     </div>
                     <input type="submit" value="Submit">
